@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body style="flex-direction: row; justify-content: space-evenly;">
+  <canvas id="canvas" width="1920" height="1080">
+  </canvas>
+  <script src="./lib/cuon-matrix-cse160.js" defer></script>
+  <script src="./lib/webgl-debug.js" defer></script>
+  <script src="./lib/webgl-utils.js" defer></script>
+  <script src="./lib/Triangle.js" defer></script>
+  <script src="./lib/Cube.js" defer></script>
+  <script src="./lib/Sphere.js" defer></script>
+
+  <script src="./src/mandelbrot.js" defer></script>
+  <script src="./src/water.js" defer></script>
+  <script src="./src/main.js" defer></script>
+  <div>
+    <div>
+      <div display="flex">
+
+      </div>
+      <p id="fps"></p>
+      <button type="button" id="normalOn">Toggle Normal</button>
+      <div style="display: flex; flex-direction: column;">
+        Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+        Light Y <input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+        Light Z <input type="range" min="-250" max="250" value="-200" class="slider" id="lightSlideZ">
+        <button type="button" id="lightOnButton">Toggle Light</button>
+      </div>
+
+    </div>
+    <h5 style="margin: 0;">Controls</h5>
+    <p style="font-size: xx-small;">
+      W - Move forward <br>
+      S - Move backward <br>
+      A - Move left <br>
+      D - Move right <br>
+      Q - Rotate left<br>
+      E - Rotate right<br>
+      Mouse - Look around<br>
+      Scroll - Zoom in/out<br>
+    </p>
+  </div>
+</body>
+
+
+</html>
